@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Personal Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Wise</h1>
+        <div class="balance-container">
+            <h2>Your Current Balance</h2>
+            <h1 id="balance">Rs. 0.00</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="summary-container">
+            <div class="income-card">
+                <h3>Income</h3>
+                <p id="total-income">Rs. 0.00</p>
+            </div>
+            <div class="expense-card">
+                <h3>Expense</h3>
+                <p id="total-expense">Rs. 0.00</p>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="transaction-section">
+                <h3>Transaction History</h3>
+                <ul id="transaction-list"></ul>
+            </div>
+    
+            <div class="form-section">
+                <h3>Add New Transaction</h3>
+                <form id="transaction-form">
+                    <div class="form-control">
+                        <label for="text">Description</label>
+                        <input type="text" id="text" placeholder="Enter description..." required>
+                    </div>
+                    <div class="form-control">
+                        <label for="amount">Amount <br> (negative - expense, positive - income)</label>
+                        <input type="number" id="amount" placeholder="Enter amount..." required>
+                    </div>
+                    <button class="btn">Add Transaction</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <h3>Expense vs Income</h3>
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
