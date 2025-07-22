@@ -43,7 +43,7 @@ main {
     background: var(--card-bg-color);
     padding: 1.5rem;
     box-shadow: var(--box-shadow);
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 1.2rem;
 }
 
@@ -145,7 +145,7 @@ h3 {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #dedede;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
 }
 
@@ -158,14 +158,14 @@ h3 {
     font-size: 1rem;
     padding: 0.75rem;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .chart-container {
     background: var(--card-bg-color);
     padding: 1.5rem;
     box-shadow: var(--box-shadow);
-    border-radius: 8px;
+    border-radius: 10px;
     max-width: 400px;
     margin: 2rem auto 0;
 }
